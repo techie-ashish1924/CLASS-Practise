@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Combination_of_Two_Coins_Possibility {
 
-    public static void Combinations(int n,String ans)
+    public static void CoinToss(int n,String ans)
     {
         if(n==0)
         {
@@ -10,8 +10,8 @@ public class Combination_of_Two_Coins_Possibility {
             return;
         }
 
-        Combinations(n-1, ans + "H");
-        Combinations(n-1, ans + "T");
+        CoinToss(n-1, ans + "H");
+        CoinToss(n-1, ans + "T");
 
 
     }
@@ -21,9 +21,9 @@ public class Combination_of_Two_Coins_Possibility {
         
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        // System.out.println(Combinations(n, ""));
+        // SysteCoinToss(n, ""));
 
-        Combinations(n, "");
+        CoinToss(n, "");
     }
     
 }
