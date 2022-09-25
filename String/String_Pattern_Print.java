@@ -11,8 +11,6 @@ public class String_Pattern_Print {
                 System.out.println(a.substring(i, j));
                 
             }   
-
-
         }
     }
 
