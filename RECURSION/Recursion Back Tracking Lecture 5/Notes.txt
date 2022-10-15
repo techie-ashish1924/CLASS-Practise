@@ -1,0 +1,4 @@
+----------------   Back Tacking  --------[Recursion]
+
+if variable and array would be automatically undo then we can not use back tacking. otherwise we will use backtracking in
+Recursion

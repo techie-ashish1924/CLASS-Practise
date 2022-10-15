@@ -1,0 +1,5 @@
+we have n length 1-D array and m no of queen.
+how many way we can be sit the queen in the array.
+
+Queen Permutation
+

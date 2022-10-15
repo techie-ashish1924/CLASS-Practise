@@ -1,0 +1,4 @@
+find the total number of combinations where
+n place [ n length array]
+
+m = no of queen
