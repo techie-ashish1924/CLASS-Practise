@@ -8,7 +8,7 @@ public class Count_Squence {
     {
         if(a.length() == 0)
         {
-            // System.out.println(ans);
+            System.out.println(ans);
             return 1;
         }
         char ch = a.charAt(0);

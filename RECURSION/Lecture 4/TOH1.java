@@ -11,10 +11,10 @@ public class TOH1 {
     }
 
     public static void main(String[] args) {
-        int n =3;
+        int n =4;
         String src = "A";
-        String hlp = "B";
-        String des = "C";
+        String hlp = "C";
+        String des = "B";
 
         toh(n,src,hlp,des);
     }
