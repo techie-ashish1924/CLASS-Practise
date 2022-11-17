@@ -32,13 +32,21 @@ public class Queue {
 
     // Size method
 
+    public int Size()
+    {
+        // return siz;
+    }
 
 
     // enqueue method
 
-    public void Enqueue(int item)
+    public void Enqueue(int item) throws Exception
     {
-        arr[size] = item;
+        if(IsFull())
+        {
+            throw new Exception("BkLol Queue Full hai");
+        }
+        arr[(front + size)%arr.length] = item;
         size++;
     }
 
@@ -46,10 +54,14 @@ public class Queue {
 
     // dequeue method
 
-    public int Dequeue()
+    public int Dequeue() throws Exception
     {
+        if(IsEmpty())
+        {
+            throw new Exception("BkLol Queue Khali hai");
+        }
         int val = arr[front];
-        front++;
+        front = (front + 1)%arr.length;
         return val;
     }
 
@@ -60,6 +72,26 @@ public class Queue {
     public int GetFront()
     {
         return arr[front];
+    }
+
+
+    // DISPLAY
+
+    public void DISPLAY()
+    {
+        for (int i = 0; i < size; i++) {
+            
+            int ind = (front + i)%arr.length;
+            System.out.print(arr[ind] + " ");
+        }
+        // for (int i = front; i < arr.length; i++) {
+        //     System.out.print(arr[i] + " ");            
+        // }
+
+        // for(int i=0;i<front;i++)
+        // {
+        //     System.out.print(arr[i] + " ");
+        // }
     }
 
 
