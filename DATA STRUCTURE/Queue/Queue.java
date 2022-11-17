@@ -6,11 +6,11 @@ public class Queue {
     private int front=0;
     private int size=0;
 
-    Queue()
+    public Queue()
     {
         arr = new int[5];
     }
-    Queue(int n)
+    public Queue(int n)
     {
         arr = new int[n];
     }
