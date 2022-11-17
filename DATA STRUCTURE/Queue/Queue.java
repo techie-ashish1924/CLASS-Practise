@@ -32,10 +32,10 @@ public class Queue {
 
     // Size method
 
-    public int Size()
-    {
-        // return siz;
-    }
+    // public int Size()
+    // {
+    //     // return siz;
+    // }
 
 
     // enqueue method
@@ -84,6 +84,7 @@ public class Queue {
             int ind = (front + i)%arr.length;
             System.out.print(arr[ind] + " ");
         }
+        System.out.println();
         // for (int i = front; i < arr.length; i++) {
         //     System.out.print(arr[i] + " ");            
         // }
