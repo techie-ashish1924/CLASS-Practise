@@ -1,4 +1,7 @@
-import java.util.Scanner;
+package Stack_Implement;
+
+
+// import java.util.Scanner;
 
 public class Stack {
 
@@ -10,7 +13,7 @@ public class Stack {
 
     // USING CONSTRUCTOR
 
-     private int[] arr;
+    protected int[] arr;
     private int top;
 
     public Stack()
@@ -104,3 +107,4 @@ public class Stack {
     // }
     
 }
+
