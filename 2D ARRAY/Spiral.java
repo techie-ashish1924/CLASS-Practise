@@ -6,24 +6,26 @@ public class Spiral {
     {
         // int row = 0;
         // int col = arr[1].length;
+
         int min_row = 0;
         int max_row = n-1;
         int min_col = 0;
         int max_col = m-1;
 
-        int c= 0;
+        int c = 0;
         int te = n*m;
         while(c < te)
         {
-            for (int i = min_col; i <= max_col && c < te; i++) {
+            for (int i = min_col; i <= max_col && c < te; i++) 
+            {
                 System.out.print(arr[min_row][i] + " ");
                 c++;
             }
             // System.out.println();
 
-
             min_row++;
-            for (int i = min_row; i <= max_row && c < te; i++) {
+            for (int i = min_row; i <= max_row && c < te; i++) 
+            {
                 System.out.print(arr[i][max_col] + " ");
                 c++;
             }
@@ -46,9 +48,6 @@ public class Spiral {
                 c++;
             }
             min_col++;
-
-
-
 
         }
     
