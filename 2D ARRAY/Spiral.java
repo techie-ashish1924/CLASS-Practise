@@ -14,6 +14,8 @@ public class Spiral {
 
         int c = 0;
         int te = n*m;
+
+        
         while(c < te)
         {
             for (int i = min_col; i <= max_col && c < te; i++) 

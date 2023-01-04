@@ -1,4 +1,4 @@
-import java.util.Scanner;
+        import java.util.Scanner;
 
 // last element set at that position
 // lesser eleemnt is present left side
@@ -27,7 +27,7 @@ public class Ques2 {
                 Swap(arr, pi, i);
                 pi++;
             }
-        }
+        }  
         Swap(arr, pi, ei);
     }
 

@@ -18,6 +18,8 @@ public class Fibbonacci {
 		// 	System.out.println(n);
 		// }
 		// else {
+
+			
 			int i=0;
 			int f = 0;   // first value
 			int s=1;     // second value
@@ -26,7 +28,6 @@ public class Fibbonacci {
 			{
 				// System.out.println(f);
 				sum = f+s;
-				
 				f=s;
 				s=sum;
 				i=i+1;

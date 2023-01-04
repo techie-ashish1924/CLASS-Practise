@@ -25,6 +25,7 @@ public class Palindrome_Partition_131 {
         
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
+        
         partition(a, "");
     }
     

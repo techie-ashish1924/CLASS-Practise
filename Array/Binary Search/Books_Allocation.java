@@ -12,8 +12,7 @@ public class Books_Allocation {
             if(read_page + pages[i]  <= mid)
             {
                 read_page = read_page + pages[i];
-                i++;
-               
+                i++;     
             }
             else{
                 read_page = 0;
@@ -24,11 +23,6 @@ public class Books_Allocation {
                 return false;
             }
         }
-            
-       
-       
-       
-       
         return true;
 
     }

@@ -61,7 +61,6 @@ public class AGGCROW {
         while (text > 0)
         {
 
-        
             int n = sc.nextInt();
             int cow = sc.nextInt();
             int arr[] = new int[n];
