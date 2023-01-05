@@ -20,6 +20,13 @@ public class LinkedList_Use {
         System.out.println(ll.getAtIndex(2));
         ll.deleteFirst();
         ll.Display();
+        ll.deleteLast();
+        ll.Display();
+
+        ll.deleteAtIndex(2);
+        ll.Display();
+        ll.deleteAtIndex(2);
+        ll.Display();
     }
     
 }

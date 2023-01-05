@@ -133,10 +133,51 @@ public class LinkedList {
 
     }
     
-    public void deleteLast()
+    public int deleteLast() throws Exception
     {
-        Node temp = GetNode();
-        temp.next = null;
+        if (size == 1) {
+            size--;
+            return deleteFirst();
+
+        } else {
+            Node temp = GetNode(size - 1);
+            int rv = tail.val;
+
+            temp.next = null;
+
+            tail = temp;
+
+            size--;
+
+            return rv;
+
+        }
+
+    }
+    
+    public int deleteAtIndex(int k) throws Exception
+    {
+
+        if (k == 0)
+        {
+            return deleteFirst();
+        }
+
+        if (k == size - 1)
+        {
+            return deleteLast();
+        }
+        else {
+            
+            Node prev = GetNode(k - 2);
+            int rv = prev.next.val;
+            Node curr = prev.next.next;
+            prev.next = curr;
+            
+            size--;
+            return rv;
+        }
+
     }
 
 
