@@ -137,4 +137,30 @@ public class Cycle_Create {
         fast.next = null;
 
     }
+
+
+    public void Cycle_Removal2()
+    {
+
+
+        Node meet = MeetingPoint();
+
+        if(meet == null)
+        {
+            return;
+        }
+
+        Node fast = meet;
+
+        Node slow = head;
+
+        while(slow.next != fast.next)
+        {
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        fast.next = null;
+
+    }
 }

@@ -1,8 +1,7 @@
-public class Cycle_Client {
+public class Floide_Cycle_Removal {
 
 
-    public static void main(String[] args)  throws Exception
-    {
+    public static void main(String[] args) {
         
         Cycle_Create cc = new Cycle_Create();
         cc.addLast(1);
@@ -14,14 +13,6 @@ public class Cycle_Client {
         cc.addLast(7);
         cc.addLast(8);
 
-        cc.CreateCycle();
-
-        // cc.CycleRemoval();
-
-        cc.Cycle_Removal2();
-
-
-        cc.Display();
     }
     
 }
