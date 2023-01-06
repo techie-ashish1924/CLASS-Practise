@@ -104,32 +104,27 @@ public class Cycle_Create {
     {
         Node meet = MeetingPoint();
 
-        if(meet == null)
-        {
+        if (meet == null) {
             return;
         }
-
 
         Node temp = meet;
         int count = 1;
 
-        while(temp.next != meet)
-        {
+        while (temp.next != meet) {
             count++;
             temp = temp.next;
         }
 
         Node fast = head;
 
-        for(int i=1;i<=count;i++)
-        {
+        for (int i = 1; i <= count; i++) {
             fast = fast.next;
         }
 
         Node slow = head;
 
-        while(slow.next != fast.next)
-        {
+        while (slow.next != fast.next) {
             slow = slow.next;
             fast = fast.next;
         }
@@ -137,6 +132,9 @@ public class Cycle_Create {
         fast.next = null;
 
     }
+    
+
+    // Floid Cycle Removal Algorithm
 
 
     public void Cycle_Removal2()
