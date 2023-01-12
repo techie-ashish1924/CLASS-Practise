@@ -123,4 +123,27 @@ public class Binary_Tree {
         InOrder(root);
     }
     
+
+    public boolean search(int item)
+    {
+    
+        return Search(root,item);
+    }
+
+    private boolean Search(Node node, int item)
+    {
+        if (node == null)
+        {
+            return false;
+        }
+        if(node.val == item)
+        {
+            return true;
+        }
+
+        boolean left = Search(node.left, item);
+        boolean right = Search(node.right, item);
+
+        return left || right;
+    }
 }
