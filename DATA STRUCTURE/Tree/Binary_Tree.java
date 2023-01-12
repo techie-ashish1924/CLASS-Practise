@@ -119,7 +119,7 @@ public class Binary_Tree {
       
     }
 
-    public void Iostorder() {
+    public void Inorder() {
         InOrder(root);
     }
     
@@ -132,12 +132,10 @@ public class Binary_Tree {
 
     private boolean Search(Node node, int item)
     {
-        if (node == null)
-        {
+        if (node == null) {
             return false;
         }
-        if(node.val == item)
-        {
+        if (node.val == item) {
             return true;
         }
 
@@ -146,4 +144,45 @@ public class Binary_Tree {
 
         return left || right;
     }
+    
+    public int Maximum(Node node)
+    {
+
+        if(node == null)
+        {
+            return Integer.MIN_VALUE;
+        }
+
+        int left = Maximum(node.left);
+        int right = Maximum(node.right);
+
+        return Math.max(left, Math.max(right, node.val));
+
+    }
+
+    public int Max()
+    {
+        return Maximum(root);
+    }
+
+
+    private int Height(Node node)
+    {
+        if(node == null)
+        {
+            return -1;
+        }
+
+        int left = Height(node.left);
+        int right = Height(node.right);
+
+        return Math.max(left, right) + 1;
+
+    }
+
+    public int Height()
+    {
+        return Height(root);
+    }
+
 }
