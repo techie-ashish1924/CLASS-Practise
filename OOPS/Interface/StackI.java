@@ -8,7 +8,7 @@ public interface StackI extends DSAI,DynamicStackI{
     
     public int size();
 
-    default void Sayher()
+    default void Sayhey()
     {
         System.out.println("Hey");
     }
