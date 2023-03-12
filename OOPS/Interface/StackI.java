@@ -22,4 +22,6 @@ public interface StackI extends DSAI,DynamicStackI{
     {
         return 9;
     }
+
+    
 }
