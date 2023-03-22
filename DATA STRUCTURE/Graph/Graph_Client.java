@@ -1,7 +1,8 @@
 
 
 
-import java.util.Scanner;
+import java.util.HashSet;
+// import java.util.Scanner;
 
 public class Graph_Client {
 
@@ -20,7 +21,27 @@ public class Graph_Client {
         g.AddEdge(7, 5, 2);
         g.AddEdge(6, 7, 3);
 
-        g.display();
+        // g.display();
+
+        // System.out.println();
+
+        // g.removevertex(4);
+
+        // g.display();
+
+        System.out.println(g.haspath(1, 6, new HashSet<>()));
+
+        System.out.println();
+        g.PrintAllpath(1, 6, new HashSet<>(), "");
+        System.out.println("BFS route found...........");
+        System.out.println(g.BFS(1, 6));
+        System.out.println("DFS...............................");
+        System.out.println(g.DFS(1, 6));
+        System.out.println("Traverse of graph by using BFT...");
+        g.BFT();
+        System.out.println("DFT TRAVERSING..............");
+        g.DFT();
+
     }
     
 }

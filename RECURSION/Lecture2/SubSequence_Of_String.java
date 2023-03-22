@@ -1,10 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SubSequence_Of_String {
 
-    public static void Sequence(String ques,String ans)
+    public static void Sequence(int []ques,List<Integer> ans)
     {
-        if(ques.length() == 0)
+        if(ques.length == 0)
         {
             System.out.println(ans);
             return;
@@ -19,9 +21,12 @@ public class SubSequence_Of_String {
         
         Scanner sc = new Scanner(System.in);
 
-        String str = sc.next();
-        String ans = "";
-        Sequence(str, ans);
+        int n = 3;
+        int arr[] = { 1, 2, 3 };
+        // String str = sc.next();
+        // String ans = "";
+        ArrayList<Integer> ans = new ArrayList<>();
+        Sequence(arr, ans);
 
 
     }
