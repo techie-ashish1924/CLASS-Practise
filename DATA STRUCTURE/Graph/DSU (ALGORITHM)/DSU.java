@@ -45,7 +45,7 @@ public class DSU {
         }
 
         Node node = find(nn.parent);
-        nn.parent = node; // path co pression
+        nn.parent = node; // path compression
         return node;
 
 
